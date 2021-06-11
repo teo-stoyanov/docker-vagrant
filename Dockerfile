@@ -1,3 +1,4 @@
 FROM php:7.0-apache
-
-RUN docker-php-ext-install pdo_mysql
+EXPOSE 80
+WORKDIR /var/www/html
+COPY index.html index.html
